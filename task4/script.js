@@ -1,5 +1,5 @@
 const w3r = document.getElementById("w3r")
 
 function getAttributes(){
-    console.log(w3r.href, w3r.hreflang, w3r.rel, w3r.target, w3r.type)
+    alert("href: " + w3r.href + "\n" + "hreflang: " + w3r.hreflang + "\n" + "rel: " + w3r.rel + "\n" + "target: " + w3r.target + "\n" + "type: " + w3r.type)
 }
