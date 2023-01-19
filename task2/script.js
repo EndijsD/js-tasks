@@ -1,8 +1,5 @@
-const form = document.getElementById("form1")
+const children = document.getElementById("form1").childNodes
 
 function getFormvalue(){
-    for (const child of form.children) {
-        if(child.tagName != "BR" && child.value != "Submit")
-            alert(child.value);
-    }
+    children.forEach(child => child.type == "text" ? alert(child.value) : false)
 }

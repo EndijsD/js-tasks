@@ -5,7 +5,7 @@ function createTable(){
 
     const rows = Number(prompt("Rows: "))
     const columns = Number(prompt("Columns: "))
-
+    
     if(rows && columns && Number.isInteger(rows) && Number.isInteger(columns)){
         for (let i = 0; i < rows; i++) {
             myTable.insertRow(i)
@@ -14,6 +14,5 @@ function createTable(){
                 cell.innerHTML = `Rows-${i+1} Columns-${j+1}`
             }
         }
-    }else
-        alert("Something went wrong!")
+    }
 }
