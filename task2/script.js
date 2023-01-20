@@ -1,5 +1,9 @@
-const children = document.getElementById("form1").childNodes
+const input = document.getElementById('form1').childNodes
 
-function getFormvalue(){
-    children.forEach(child => child.type == "text" ? alert(child.value) : false)
+function getFormValue() {
+	let name = ''
+	input.forEach((item) => {
+		if (item.type == 'text') name += item.value + ' '
+	})
+	alert(name)
 }

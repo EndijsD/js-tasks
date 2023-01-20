@@ -1,9 +1,19 @@
-const p = document.getElementById("p")
+const p = document.getElementById('p')
 
 window.onload = displayResolution()
 
-window.onresize = () => displayResolution()
+window.addEventListener('resize', () => {
+	displayResolution()
+})
 
-function displayResolution(){
-    p.innerHTML = "Inner Height: " + window.innerHeight + "<br>Inner Width: " + window.innerWidth + "<br><br>Outer Height: " + window.outerHeight + "<br>Outer Width: " + window.outerWidth
+function displayResolution() {
+	p.innerHTML =
+		'Inner Height: ' +
+		window.innerHeight +
+		'<br>Inner Width: ' +
+		window.innerWidth +
+		'<br><br>Outer Height: ' +
+		window.outerHeight +
+		'<br>Outer Width: ' +
+		window.outerWidth
 }

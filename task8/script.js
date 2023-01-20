@@ -1,6 +1,6 @@
-const colorSelect = document.getElementById("colorSelect")
+const colorSelect = document.getElementById('colorSelect')
 
-function removecolor(){
-    if (colorSelect.length)
-        colorSelect.options[colorSelect.selectedIndex].remove()
+function removeColor() {
+	if (colorSelect.length)
+		colorSelect.options[colorSelect.selectedIndex].remove()
 }
